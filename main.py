@@ -7,6 +7,9 @@ def test_example():
         page.goto("https://example.com")
         text = page.locator('h1').first.text_content()
         print(text) 
+        with open('text.txt',mode='w') as writer:
+            writer.write(text)
+            writer.close()
         browser.close()
 
 test_example()

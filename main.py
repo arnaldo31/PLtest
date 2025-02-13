@@ -7,3 +7,5 @@ def test_example():
         page.goto("https://example.com")
         assert "Example" in page.title()
         browser.close()
+
+test_example()

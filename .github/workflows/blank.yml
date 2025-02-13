@@ -1,4 +1,4 @@
-name: Install Playwright and Run main.py
+name: Install Playwright 
 
 on:
   push:

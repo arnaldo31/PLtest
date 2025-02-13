@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Playwright Tests and Run Script
 
 on: 
   push:
@@ -33,3 +33,7 @@ jobs:
       - name: Run Playwright Tests
         run: |
           pytest tests/
+
+      - name: Run main.py
+        run: |
+          python main.py

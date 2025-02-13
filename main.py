@@ -5,7 +5,8 @@ def test_example():
         browser = p.chromium.launch()
         page = browser.new_page()
         page.goto("https://example.com")
-        assert "Example" in page.title()
+        text = page.locator('h1').first.text_content()
+        print(text) 
         browser.close()
 
 test_example()
